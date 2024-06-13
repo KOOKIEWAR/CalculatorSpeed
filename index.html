@@ -1,0 +1,67 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <link rel="stylesheet" href="calculator.css">
+    <title>Calculator speed</title>
+    <link rel="shortcut icon" href="https://e7.pngegg.com/pngimages/245/824/png-clipart-computer-icons-encapsulated-postscript-running-man-miscellaneous-sport.png" />
+    <script type="text/javascript" src="script.js"></script>
+</head>
+<body>
+    <h1>Calculator speed</h1>
+    <div class="container">
+        <form action="#" method="post">
+            <fieldset>
+            
+                <div>
+                    <label for="distance">Distanza percorsa:</label>
+                    <input type="text" id="distance" value=0.0 required>
+                    <select id="unitDistance">
+                        <option value="metri" selected>metri</option>
+                        <option value="Km">Km</option>
+                        <option value="miglia">miglia</option>
+                        <option value="yards">yards</option>
+                    </select>
+                </div>
+                <hr>
+                <div>
+                    <label for="ore">ore:</label>
+                    <input type="text" id="hours" value=0 required><br>
+                    <label for="minuti">minuti:</label>
+                    <input type="text" id="minutes" value=0 required><br>
+                    <label for="secondi">secondi:</label>
+                    <input type="text" id="seconds" value=0 required><br>
+                </div>
+                <hr>
+                
+            </fieldset> 
+            <div class="button">
+                <button type="button" onclick="calculate()">Calcola</button>
+                <button type="reset">Reimposta</button>
+            </div>
+            <fieldset>
+                <div>
+                    <label for="speedKm">Passo al Km:</label>
+                    <input class="result" id="speedKm1" value=0 readonly></input>
+                    <label> : </label>
+                    <input type="text" id="speedKm2" value=0 readonly><br>
+
+                    <label for="Km/h">Km/h:</label>
+                    <input type="text" id="Km/h" value=0.0 readonly><br>
+
+                    <label for="Metri/secondo">Metri/secondo:</label>
+                    <input type="text" id="Metri/secondo" value=0.0 readonly><br>   
+                    <hr>
+                    <label for="PassoMiglio">Passo al miglio:</label>
+                    <input type="text" id="PassoMiglio1" value=0 readonly>
+                    <label> : </label>
+                    <input type="text" id="PassoMiglio2" value=0 readonly><br>
+
+                    <label for="Miglia/h">Miglia/h:</label>
+                    <input type="text" id="Miglia/h" value=0.0 readonly><br>
+                </div>
+            </fieldset>
+        </form>
+    </div>
+</body>
+</html>

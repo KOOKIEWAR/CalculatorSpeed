@@ -1,0 +1,27 @@
+fieldset{
+    background-color: aqua;
+    color : black;
+}
+
+h1{
+    color:red;
+}
+
+hr{
+    color: green;
+}
+
+.container, .button, h1{
+    display: flex;
+    justify-content: center;
+    align-items: center;
+}
+
+input{
+    width: 10%;
+}
+
+input:hover, select:hover{
+    background-color: red;
+    color :black;
+}
