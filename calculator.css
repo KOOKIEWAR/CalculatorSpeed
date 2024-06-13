@@ -1,5 +1,9 @@
+body{
+    background-color: black;
+}
+
 fieldset{
-    background-color: aqua;
+    background-color: green;
     color : black;
 }
 
@@ -8,7 +12,7 @@ h1{
 }
 
 hr{
-    color: green;
+    color: black;
 }
 
 .container, .button, h1{
@@ -17,11 +21,16 @@ hr{
     align-items: center;
 }
 
+input, select{
+    background-color: black;
+    color :white;
+}
+
 input{
     width: 10%;
 }
 
-input:hover, select:hover{
+input:hover, select:hover, button:hover{
     background-color: red;
     color :black;
 }
