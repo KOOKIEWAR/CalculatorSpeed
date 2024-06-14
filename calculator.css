@@ -1,42 +1,47 @@
 body{
-    background-image: url("photo_2024-06-14_09-59-50.jpg");
+    background-color : black;
     background-repeat :no-repeat;
     
     background-position-x:center;
     background-position-y:0%;
     background-size: 100%;
+    color:black;
+    
 }
 
 fieldset{
-    color : black;
+    background-image: url("https://banner2.cleanpng.com/20240402/owv/transparent-marathon-running-exercise-fitness-active-lifestyle-colorful-running-group-on-energetic-paint-backgrou660cba03bdeaa2.28466322.webp");
 }
+
+#fs1{background-position-y: 15%;}
+#fs2{background-position-y: 40%;}
 
 form::before{
     content: "Calcolatore velocità";
-    font-size: 30px;
-    color:black;
+    font-size: 80px;
+    color:red;
     justify-content: center;
     align-content: center;
-}
-
-table{
-    border-width  : solid ;
 }
 
 hr{
     height: 5px;
     background-color: black;
-
 }
 
-.container, .button, h1{
+button{
+    background-color: black;
+    color:white;
+}
+
+.container, .button{
     display: flex;
     justify-content: center;
     align-items: center;
 }
 
 input, select{
-    background-color: black;
+    background-color: black ;
     color :white;
 }
 
