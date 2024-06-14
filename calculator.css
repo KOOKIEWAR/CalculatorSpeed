@@ -13,8 +13,8 @@ fieldset{
     background-image: url("https://banner2.cleanpng.com/20240402/owv/transparent-marathon-running-exercise-fitness-active-lifestyle-colorful-running-group-on-energetic-paint-backgrou660cba03bdeaa2.28466322.webp");
 }
 
-#fs1{background-position-y: 15%;}
-#fs2{background-position-y: 40%;}
+#fs1{background-position-y: top;}
+#fs2{background-position-y: center;}
 
 form::before{
     content: "Calcolatore velocità";
