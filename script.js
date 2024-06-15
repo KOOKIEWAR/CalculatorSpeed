@@ -66,11 +66,11 @@ function calculate(){
         const totalTime = secondParameter(hours, minutes, seconds);
         
         speedKm1.value = parseInt(passo1(dist, totalTime, 1000));
-        speedKm2.value = parseInt(passo2(passo1(dist, totalTime, 1000)));
+        speedKm2.value = zeroBefore(parseInt(passo2(passo1(dist, totalTime, 1000))));
         distTime1.value = parseFloat(unitOrari(dist, totalTime, 1000));
         distTime2.value = parseFloat(metriPerSecondo(dist, totalTime));
         speedMiglio1.value = parseInt(passo1(dist, totalTime, 1609));
-        speedMiglio2.value = parseInt(passo2(passo1(dist, totalTime, 1609)));
+        speedMiglio2.value = zeroBefore(parseInt(passo2(passo1(dist, totalTime, 1609))));
         distTime3.value = parseFloat(unitOrari(dist, totalTime, 1609));
         passoXMetri(dist, totalTime);
     }
@@ -99,7 +99,16 @@ function passoXMetri(distance, time){
         if(distance == 0) minutiPass.value = 0;
         else if (distance > 0) minutiPass.value = parseInt(y / 60);
 
-        if(((y/60) % 1) == 0) secondiPass.value = 0;
-        else if(((y/60) % 1) > 0) secondiPass.value = parseInt(((y/60) % 1) * 60);
+        if(((y/60) % 1) == 0) secondiPass.value = "00";
+        else if(((y/60) % 1) > 0){
+            secondiPass.value = zeroBefore(parseInt(((y/60) % 1) * 60));
+        }
     }
+}
+
+function zeroBefore(value){
+    var nwValue;
+    if (value >= 0 && value <= 9) nwValue = "0" + value;
+    else if(value > 9) nwValue = value;
+    return  nwValue;
 }
