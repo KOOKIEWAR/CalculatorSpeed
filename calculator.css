@@ -74,7 +74,7 @@ button:hover, input:hover, select:hover{background-color: rgb(37, 34, 34);}
         }
         
         .container{
-            background-image: linear-gradient(to bottom, red 15%, white, red);
+            background-image: linear-gradient(to right, red 15%, white, red);
             background-repeat: no-repeat;
             background-size: 100% 100%;
             margin: 0 auto;
