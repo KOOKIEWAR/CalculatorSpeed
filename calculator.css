@@ -1,3 +1,5 @@
+/* STRETTO */
+
 body{
     background-color : black;
     text-transform: capitalize;
@@ -21,7 +23,7 @@ body{
 
 .title{
     text-align: center;
-    font-size: 40px;
+    font-size: 50px;
 }   
 
 ::selection{
@@ -55,7 +57,7 @@ div.button{
 
 input{
     width: 30%;
-    height: 20px;
+    height: 25px;
 }
 
 button{height: 30px;}
@@ -70,7 +72,7 @@ button:hover, input:hover, select:hover{background-color: rgb(37, 34, 34);}
 input:active{
     background-color: rgb(37, 34, 34);
 }
-
+/* LARGO */
 @media only screen and (min-width: 600px){
     body{
         background-color : black;
