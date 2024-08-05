@@ -224,3 +224,4 @@ resetButton.addEventListener("click", function(){
     minutesToPace.value = 0;
     secondsToPace.value = 0;
 });
+
