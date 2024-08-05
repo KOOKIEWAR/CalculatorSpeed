@@ -53,10 +53,15 @@ div.button{
 
 }
 
-input{width: 30%;}
+input{
+    width: 30%;
+    height: 20px;
+}
+
+button{height: 30px;}
 
 input, select, button{
-    background-color: black ;
+    background-color: black;
     color :white;
 }
 
