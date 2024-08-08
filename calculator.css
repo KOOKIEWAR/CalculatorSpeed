@@ -12,7 +12,7 @@
 
 @media only screen and (min-width: 768px) and (max-width: 991px) {  /*landscape tablets and my phone potrait and landscape*/
     .container{
-        background-image: linear-gradient(to right, yellow 15%,white, yellow);
+        background-image: linear-gradient(to right, salmon 15%,white, salmon);
 
         height: 620px;
         width:1000px;
