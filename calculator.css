@@ -4,33 +4,33 @@
     }
 }
 
-@media only screen and (min-width: 600px) {  /*potrait tablets or large phones*/
+@media only screen and (min-width: 601px) and (max-width: 767px) {  /*potrait tablets or large phones*/
     .container{
         background-image: linear-gradient(to bottom, blue 15%,white, blue);
     }
 }
 
-@media only screen and (min-width: 768px) {  /*landscape tablets*/
+@media only screen and (min-width: 768px) and (max-width: 991px) {  /*landscape tablets*/
     .container{
         background-image: linear-gradient(to bottom, yellow 15%,white, yellow);
     }
 }
 
-@media only screen and (min-width: 992px) {  /*laptops/desktops*/
+@media only screen and (min-width: 992px) and (max-width: 1199px) {  /*laptops/desktops*/
     .container{
         background-image: linear-gradient(to bottom, black 15%,white, black);
     }
 }
 
 @media only screen and (min-width: 1200px) {  /*large laptops and desktops*/
-    
+    .container{
+        background-image: linear-gradient(to bottom, red 15%,white, red);
+    }
 }
 
 
 
-/**/
-
-
+/*
 body{
     background-color : black;
     text-transform: capitalize;
@@ -103,4 +103,5 @@ button:hover, input:hover, select:hover{background-color: rgb(37, 34, 34);}
     
 input:active{
     background-color: rgb(37, 34, 34);
-}
+}*/
+
