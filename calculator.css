@@ -13,16 +13,76 @@
 @media only screen and (min-width: 768px) and (max-width: 991px) {  /*landscape tablets and my phone potrait and landscape*/
     .container{
         background-image: linear-gradient(to right, yellow 15%,white, yellow);
+
+        height: 620px;
+        width: 100%;
+        padding-bottom:50px;
+    }
+
+    div.button{
+        text-align: center;
+        width: 77.5%;
+        margin:10px auto;
+        padding:5px 0px;
+        border:5px solid rgb(37, 34, 34);
+        background-color: black;
+        background-image: url("freccia.png");
+        background-size: contain;
+    }
+
+    div.container1, div.container2{
+        width: 80%;
+        position: relative;
+        margin:0 auto;
     }
 }
 
 @media only screen and (min-width: 992px) {  /*laptops/desktops*/
     .container{
         background-image: linear-gradient(to right, red 15%,white, red);
+        
+        height: 520px;
+        width: 100%;
+        padding-bottom:50px;
+        
+    }
+
+    div.container1, div.container2{
+        width: 30%;
+        position :absolute;
+    }
+
+    div.container1{
+        
+        left:40px;
+        top: 150px;
+    }
+    
+    div.container2{
+        right: 40px;
+        top: 150px;
+    }
+
+    div.button{
+        text-align: center;
+        display: flex;
+        justify-content: center;
+        margin-top:150px;
+    }
+    
+    #submitButton, #resetButton{
+        border-radius:20px;
+        border:5px solid black;
+        height: 50px;
+        transition: all .1s;
+    }
+
+    label, button, select{
+        font-size: 20px;
     }
 }
 
-
+/**/
 
 
 body{
@@ -36,25 +96,22 @@ body{
 }
 
 .container{
-    
     border-radius: 20px;
     background-repeat: no-repeat;
-    background-size: 500px 670px;
-    height: 600px;
-    width: 500px;
-    padding-bottom:50px;
+    background-size: 100%;
 }
 
 
 
 .title{
     text-align: center;
-    font-size: 40px;
+    font-size: 50px;
+    margin: 13px 0;
 }   
 
 ::selection{
-    background-color: black;
-    color:red;
+    background-color: red;
+    color:black;
     text-shadow: none;
 }
 
@@ -62,7 +119,7 @@ hr{
     height: 5px;
     background-color: black;
 }
-
+/*
 div.container1, div.container2{
     width: 80%;
     position: relative;
@@ -80,7 +137,7 @@ div.button{
     background-size: contain;
 
 }
-
+*/
 input{
     width: 20%;
     height: 25px;
@@ -98,4 +155,11 @@ button:hover, input:hover, select:hover{background-color: rgb(37, 34, 34);}
     
 input:active{
     background-color: rgb(37, 34, 34);
+}
+
+button:active{
+    background-color: white;
+    color:black;
+    font-weight: bold;  
+    
 }
