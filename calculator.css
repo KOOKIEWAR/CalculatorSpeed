@@ -15,7 +15,7 @@
         background-image: linear-gradient(to right, yellow 15%,white, yellow);
 
         height: 620px;
-        width: 100%;
+        width:1000px;
         padding-bottom:50px;
     }
 
@@ -93,6 +93,7 @@ body{
     display: flex;
     justify-content: center;
     align-items: center;
+    width: 100%;
 }
 
 .container{
