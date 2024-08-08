@@ -1,36 +1,30 @@
 @media only screen and (max-width: 600px) {  /*phones*/
     .container{
-        background-image: linear-gradient(to bottom, green 15%,white, green);
+        background-image: linear-gradient(to right, green 15%,white, green);
     }
 }
 
 @media only screen and (min-width: 601px) and (max-width: 767px) {  /*potrait tablets or large phones*/
     .container{
-        background-image: linear-gradient(to bottom, blue 15%,white, blue);
+        background-image: linear-gradient(to right, blue 15%,white, blue);
     }
 }
 
-@media only screen and (min-width: 768px) and (max-width: 991px) {  /*landscape tablets*/
+@media only screen and (min-width: 768px) and (max-width: 991px) {  /*landscape tablets and my phone potrait and landscape*/
     .container{
-        background-image: linear-gradient(to bottom, yellow 15%,white, yellow);
+        background-image: linear-gradient(to right, yellow 15%,white, yellow);
     }
 }
 
-@media only screen and (min-width: 992px) and (max-width: 1199px) {  /*laptops/desktops*/
+@media only screen and (min-width: 992px) {  /*laptops/desktops*/
     .container{
-        background-image: linear-gradient(to bottom, black 15%,white, black);
-    }
-}
-
-@media only screen and (min-width: 1200px) {  /*large laptops and desktops*/
-    .container{
-        background-image: linear-gradient(to bottom, red 15%,white, red);
+        background-image: linear-gradient(to right, red 15%,white, red);
     }
 }
 
 
 
-/*
+
 body{
     background-color : black;
     text-transform: capitalize;
@@ -42,15 +36,16 @@ body{
 }
 
 .container{
-    background-image: linear-gradient(to bottom, red 15%,white, red);
+    
     border-radius: 20px;
     background-repeat: no-repeat;
     background-size: 500px 670px;
     height: 600px;
     width: 500px;
-    object-fit:fill;
     padding-bottom:50px;
 }
+
+
 
 .title{
     text-align: center;
@@ -103,5 +98,4 @@ button:hover, input:hover, select:hover{background-color: rgb(37, 34, 34);}
     
 input:active{
     background-color: rgb(37, 34, 34);
-}*/
-
+}
