@@ -110,7 +110,7 @@ button:active{
     }
 }
 
-@media only screen and (min-width: 768px) and (max-width: 991px) {  /*landscape tablets and my potrait and landscape phone*/
+@media only screen and (min-width: 768px) and (max-width: 991px) {  /*landscape tablets and my phone*/
     .container{
         background-image: linear-gradient(to right, yellow 15%,white, salmon);
 
@@ -118,6 +118,8 @@ button:active{
         width:1000px;
         padding-bottom:50px;
     }
+
+    hr{margin : 30px 0;}
 
     div.button{
         text-align: center;
@@ -141,10 +143,10 @@ button:active{
         margin:0 auto;
     }
 
-    .container1 label, .container2 label{font-size: 20px;}
+    .container1 label, .container2 label{font-size: 30px;}
 
     .container1 input, .container2 input{
-        width: 200px;
+        width: 170px;
         font-weight: bold;
     }
 
@@ -157,7 +159,7 @@ button:active{
     .title{
         text-align: center;
         font-size: 75px;
-        margin: 13px 0;
+        margin: 20px 0 50px 0;
     }   
 }
 
