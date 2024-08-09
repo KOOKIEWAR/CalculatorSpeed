@@ -1,3 +1,103 @@
+body{
+    background-color : black;
+    text-transform: capitalize;
+    color:black;
+    text-shadow: 0px 0px 2px red, -2px -2px 4px white , -4px -4px 6px black;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    width: 100%;
+}
+
+.container{
+    border-radius: 20px;
+    background-repeat: no-repeat;
+    background-size: 100%;
+}
+
+
+.title{
+    text-align: center;
+    font-size: 50px;
+    margin: 13px 0;
+}   
+
+::selection{
+    background-color: red;
+    color:black;
+    text-shadow: none;
+}
+
+hr{
+    height: 5px;
+    background-color: black;
+}
+
+div.container1, div.container2{
+    width: 80%;
+    position: relative;
+    margin:0 auto;
+}
+/*
+div.button{
+    text-align: center;
+    width: 77.5%;
+    margin:10px auto;
+    padding:5px 0px;
+    border:5px solid rgb(37, 34, 34);
+    background-color: black;
+    background-image: url("freccia.png");
+    background-size: contain;
+
+}
+*/
+input{
+    width: 20%;
+    height: 25px;
+    font-size: 15px;
+}
+#submitButton, #resetButton{
+    border-radius:20px;
+    border:0;
+    height: 50px;
+    transition: all .2s;
+    font-weight: bold;
+    background-color: black;
+    color:white;
+    text-transform: uppercase;
+    font-size: 15px;
+}
+
+#submitButton:hover, #resetButton:hover{
+    background-color: gray;
+    color:black;
+}
+
+button{height: 30px;}
+
+input, select{
+    background-color: black;
+    color :white;
+    border:2px solid gray;
+}
+
+input:hover, select:hover{background-color: rgb(37, 34, 34);}
+    
+input:active{
+    background-color: rgb(37, 34, 34);
+}
+
+button:active{
+    background-color: white;
+    color:black;  
+    
+}
+
+
+
+/**/
+
+
 @media only screen and (max-width: 600px) {  /*phones*/
     .container{
         background-image: linear-gradient(to right, green 15%,white, green);
@@ -10,7 +110,7 @@
     }
 }
 
-@media only screen and (min-width: 768px) and (max-width: 991px) {  /*landscape tablets and my phone potrait and landscape*/
+@media only screen and (min-width: 768px) and (max-width: 991px) {  /*landscape tablets and my potrait and landscape phone*/
     .container{
         background-image: linear-gradient(to right, yellow 15%,white, salmon);
 
@@ -28,13 +128,37 @@
         background-color: black;
         background-image: url("freccia.png");
         background-size: contain;
+        border-radius: 20px;
+    }
+
+    #submitButton, #resetButton{
+        background-color: transparent;
     }
 
     div.container1, div.container2{
-        width: 80%;
+        width: 75%;
         position: relative;
         margin:0 auto;
     }
+
+    .container1 label, .container2 label{font-size: 20px;}
+
+    .container1 input, .container2 input{
+        width: 200px;
+        font-weight: bold;
+    }
+
+    .container1 select{
+        height: 30px;
+        text-transform: uppercase;
+        font-weight: bold;
+    }
+
+    .title{
+        text-align: center;
+        font-size: 75px;
+        margin: 13px 0;
+    }   
 }
 
 @media only screen and (min-width: 992px) {  /*laptops/desktops*/
@@ -69,98 +193,8 @@
         justify-content: center;
         margin-top:150px;
     }
-    
-    #submitButton, #resetButton{
-        border-radius:20px;
-        border:5px solid black;
-        height: 50px;
-        transition: all .1s;
-    }
 
     label, button, select{
         font-size: 20px;
     }
-}
-
-/**/
-
-
-body{
-    background-color : black;
-    text-transform: capitalize;
-    color:black;
-    text-shadow: 0px 0px 2px red, -2px -2px 4px white , -4px -4px 6px black;
-    display: flex;
-    justify-content: center;
-    align-items: center;
-    width: 100%;
-}
-
-.container{
-    border-radius: 20px;
-    background-repeat: no-repeat;
-    background-size: 100%;
-}
-
-
-
-.title{
-    text-align: center;
-    font-size: 50px;
-    margin: 13px 0;
-}   
-
-::selection{
-    background-color: red;
-    color:black;
-    text-shadow: none;
-}
-
-hr{
-    height: 5px;
-    background-color: black;
-}
-/*
-div.container1, div.container2{
-    width: 80%;
-    position: relative;
-    margin:0 auto;
-}
-
-div.button{
-    text-align: center;
-    width: 77.5%;
-    margin:10px auto;
-    padding:5px 0px;
-    border:5px solid rgb(37, 34, 34);
-    background-color: black;
-    background-image: url("freccia.png");
-    background-size: contain;
-
-}
-*/
-input{
-    width: 20%;
-    height: 25px;
-    font-size: 15px;
-}
-
-button{height: 30px;}
-
-input, select, button{
-    background-color: black;
-    color :white;
-}
-
-button:hover, input:hover, select:hover{background-color: rgb(37, 34, 34);}
-    
-input:active{
-    background-color: rgb(37, 34, 34);
-}
-
-button:active{
-    background-color: white;
-    color:black;
-    font-weight: bold;  
-    
 }
