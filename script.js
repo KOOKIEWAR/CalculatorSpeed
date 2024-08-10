@@ -204,7 +204,7 @@ submitButton.addEventListener("click", function(){
     minutesToPace.value = parseInt(calcMinutesToPace(meter, second, pace));
     secondsToPace.value = zeroBefore(parseInt(calcSecondsToPace(calcMinutesToPace(meter, second, pace))));
     
-    document.getElementById("meterPace").innerHTML = "Passaggio al " + passaggio.value + " : ";
+    if (passaggio.value != "0") document.getElementById("meterPace").innerHTML = "Passaggio al " + passaggio.value + " : ";
 });
 
 resetButton.addEventListener("click", function(){

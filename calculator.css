@@ -148,12 +148,15 @@ button:active{
     .container1 input, .container2 input{
         width: 170px;
         font-weight: bold;
+        height: 30px;
+        font-size: 20px;
     }
 
     .container1 select{
-        height: 30px;
+        height: 40px;
         text-transform: uppercase;
         font-weight: bold;
+        font-size: 20px;
     }
 
     .title{
