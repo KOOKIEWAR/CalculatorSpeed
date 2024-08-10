@@ -10,6 +10,8 @@ body{
 }
 
 .container{
+    background-image: linear-gradient(to right, green 25%, white 45%, red );
+
     border-radius: 20px;
     background-repeat: no-repeat;
     background-size: 100%;
@@ -99,20 +101,32 @@ button:active{
 
 
 @media only screen and (max-width: 600px) {  /*phones*/
+    /*
     .container{
         background-image: linear-gradient(to right, green 15%,white, green);
+    }*/
+    div.button{
+        text-align: center;
+        display: flex;
+        justify-content: center;
     }
 }
 
 @media only screen and (min-width: 601px) and (max-width: 767px) {  /*potrait tablets or large phones*/
+    /*
     .container{
         background-image: linear-gradient(to right, blue 15%,white, blue);
+    }*/
+    div.button{
+        text-align: center;
+        display: flex;
+        justify-content: center;
     }
 }
 
 @media only screen and (min-width: 768px) and (max-width: 991px) {  /*landscape tablets and my phone*/
     .container{
-        background-image: linear-gradient(to right, yellow 15%,white, salmon);
+        /*background-image: linear-gradient(to right, yellow 15%,white, salmon);*/
 
         height: 1600px;
         width:1000px;
@@ -153,7 +167,7 @@ button:active{
     }
 
     .container1 select{
-        height: 40px;
+        height: 35px;
         text-transform: uppercase;
         font-weight: bold;
         font-size: 20px;
@@ -168,7 +182,7 @@ button:active{
 
 @media only screen and (min-width: 992px) {  /*laptops/desktops*/
     .container{
-        background-image: linear-gradient(to right, red 15%,white, red);
+        /*background-image: linear-gradient(to right, red 15%,white, red);*/
         
         height: 520px;
         width: 100%;
